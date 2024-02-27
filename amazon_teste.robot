@@ -2,7 +2,7 @@
 Documentation   Essa suite testa o site da Amazon.com.br
 Library         SeleniumLibrary
 Test Setup      Abrir o navegador
-# Test Teardown   Fechar o navegador
+Test Teardown   Fechar o navegador
 
 *** Variables ***
 ${URL}                                  https://www.amazon.com.br/ 
@@ -73,8 +73,8 @@ Verificar o carrinho
     Click Element                         locator=${CARRINHO} 
     Capture Page Screenshot
 Fechar o Pedido
-    Click Button                          locator=${FECHAR_PEDIDO}    
-    Sleep    5
+    Click Button                          locator=${FECHAR_PEDIDO} 
+    Sleep    5 
     Capture Page Screenshot
 
 Digitar o email "${EMAIL2}"
